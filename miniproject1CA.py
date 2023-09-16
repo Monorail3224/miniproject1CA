@@ -89,7 +89,7 @@ for symbol in companies:
 
         
         # Create a scatterplot using Matplotlib
-        plt.figure(figsize=(10, 10), facecolor='beige')  # Adjust the width and height of the scatterplot image in inches and set the background color 
+        plt.figure(figsize=(10, 10), facecolor='beige')  # Adjust the width and height of the scatterplot image in and set the background color 
         plt.scatter(dates_array, close_prices_array, marker='H', color='green', label=f'{symbol} Close Prices')
         plt.xlabel('Date')
         plt.ylabel('Closing Price in Dollar Amount')
