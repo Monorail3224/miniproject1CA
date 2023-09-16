@@ -13,7 +13,7 @@ This project utilizies several third party libraries to send API requests using 
 Please run the following:
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## How to run
