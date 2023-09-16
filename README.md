@@ -1,6 +1,7 @@
 # miniproject1CA
 
 INF601 Advanced Programming with Python
+
 Clayton Allen
 
 ## Description
@@ -17,6 +18,7 @@ pip install requirements.txt
 
 ## How to run
 In a terminal, please type the following:
+
 '''
-python main.py
+**python main.py**
 '''
