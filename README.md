@@ -20,5 +20,5 @@ pip install requirements.txt
 In a terminal, please type the following:
 
 ```
-**python main.py**
+python main.py
 ```
