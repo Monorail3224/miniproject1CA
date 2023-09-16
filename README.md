@@ -12,13 +12,13 @@ This project utilizies several third party libraries to send API requests using 
 
 Please run the following:
 
-'''
+```
 pip install requirements.txt
-'''
+```
 
 ## How to run
 In a terminal, please type the following:
 
-'''
+```
 **python main.py**
-'''
+```
