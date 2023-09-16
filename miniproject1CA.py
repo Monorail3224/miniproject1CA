@@ -2,13 +2,14 @@
 # Clayton Allen
 # Mini Project 1
 
-#The required libraries and modules for this project to work. List of all dependencies will be shown in the "Requirements.txt" file located in 
-
 """
 This script makes use of a REST API available through rapidapi.com. 
 Please visit the provided link to explore additional endpoints.
 https://rapidapi.com/asepscareer/api/yfinance-stock-market-data/
 """
+
+#The required libraries and modules for this project to work. List of all dependencies will be shown in the "Requirements.txt" text file.
+
 
 import os # Required to make the directory "Images" which is used as a staging area for outputted image files. 
 import requests  # Required to send API requests to endpoints
@@ -39,3 +40,21 @@ def get_trades(apikey, symbol): #Positional arguments used as input for funciton
 
     response = requests.post(url, data=payload, headers=headers)
     
+    # Error checking to ensure request is accepted before showing output. Returns an error code if nothing is shown. 
+    if response.status_code == 200:
+        data = response.json()
+        return data['data']
+    else:
+        print(f"Error: {response.status_code}")
+        return None
+    
+    # List of symbols for the companies that I've invested in the past.
+companies = ["AAPL", "GE", "NET", "NVDA", "RTX"]
+
+# Create the 'charts' directory if it doesn't exist. This will be used to store the five scatterplot .PNG files.
+output_directory = 'charts'
+if not os.path.exists(output_directory):
+    os.makedirs(output_directory)
+
+for symbol in companies:
+    data = get_trades(apikey=X_RapidAPI_Key, symbol=symbol)
