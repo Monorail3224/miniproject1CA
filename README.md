@@ -16,6 +16,15 @@ Please run the following:
 pip install -r requirements.txt
 ```
 
+## Ensure that your "config.py" file is located in the same directory as "main.py"
+
+## Example "config.py" file
+
+```
+X_RapidAPI_Key = "yourAPIkey"
+```
+
+
 ## How to run
 In a terminal, please type the following:
 
